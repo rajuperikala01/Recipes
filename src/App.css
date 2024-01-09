@@ -1,38 +1,107 @@
-.App {
-  text-align: center;
+* {
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: rgba(203, 211, 218, 0.849);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.form {
+    display: flex;
+    justify-content: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.input {
+    border: none;
+    outline: none;
+    height: 30px;
+    width: 300px;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
 }
 
-.App-link {
-  color: #61dafb;
+.input:focus {
+    /* outline: auto; */
+    box-shadow: 1px 5px 5px rgba(0,0,0,0.5);
+    outline: 1px solid rgba(0, 0, 0, 0.459);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.input:hover {
+    /* outline: auto; */
+    box-shadow: 1px 5px 5px rgba(0,0,0,0.5);
+    outline: 1px solid rgba(0, 0, 0, 0.459);
+}
+.btn {
+    height: 30px;
+    width: 60px;
+    border: none;
+    margin-left: 20px;
+}
+
+.btn:hover {
+    background-color: black;
+    transform: scale(1.05);
+    border: 1px solid rgba(0, 0, 0, 0.438);
+    border-radius: 10px;
+    color: white;
+    font-size: 12px;
+}
+
+.recipe {
+    height: 350px;
+    width: 350px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.356);
+    position: relative;
+    margin-left: 80px;
+    margin-top: 50px;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0, 1);
+}
+
+.recipe:hover {
+    transform: scale(1.05, 1.05);
+    box-shadow: 0px 30px 18px -8px rgba(0, 0, 0, 0.5);
+}
+
+.recipe img {
+    position: absolute;
+    height: 350px;
+    width: 350px;
+    left: 0px;
+    border-radius: 10px;
+    z-index: -0.5;
+}
+
+.recipe p {
+  margin: 5px 0 0 10px;
+}
+
+.information {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.637);
+    display: block;
+    width: 350px;
+    text-align: left;
+    height: 80px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.information h4{
+    margin: 2px 0 0 10px;
+}
+
+.information h5 {
+    margin: 2px 0 0 10px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;   
 }
