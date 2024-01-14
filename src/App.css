@@ -62,7 +62,7 @@ body {
 }
 
 .recipe:hover {
-    transform: scale(1.05, 1.05);
+    transform: scale(1.05);
     box-shadow: 0px 30px 18px -8px rgba(0, 0, 0, 0.5);
 }
 
